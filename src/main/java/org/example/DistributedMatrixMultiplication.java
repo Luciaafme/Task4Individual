@@ -43,8 +43,8 @@ public class DistributedMatrixMultiplication {
         joinConfig.getMulticastConfig().setEnabled(false);
         joinConfig.getTcpIpConfig()
                 .setEnabled(true)
-                .addMember("192.168.11.173") // Node 1
-                .addMember("192.168.11.132"); // Node 2
+                .addMember("IP1") // Node 1
+                .addMember("IP2"); // Node 2
 
         hazelcastInstance = Hazelcast.newHazelcastInstance(config);
     }

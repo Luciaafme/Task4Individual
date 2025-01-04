@@ -16,6 +16,7 @@ public class MatrixMultiplicationTask implements Callable<int[][]>, Serializable
 
     @Override
     public int[][] call() {
+        System.out.println("Node executing task: " + nodeName);
         int rows = chunkA.length;
         int cols = matrixB[0].length;
         int size = matrixB.length;
